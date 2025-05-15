@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdf4ff;
+  color: #333;
+}
+
+.navbar {
+  background-color: #4c1d95;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img{
+    border-radius: 50%;
+}
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 100px 10% 60px;
+  background: linear-gradient(135deg, #ede9fe, #f3e8ff);
+  animation: fadeUp 1.2s ease-out;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  color: #4c1d95;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #4c1d95;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #7c3aed;
+}
+
+.details-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  animation: fadeUp 1.2s ease-out;
+}
+
+.text-block {
+  flex: 1;
+}
+
+.text-block h2 {
+  font-size: 2rem;
+  color: #4c1d95;
+}
+
+.text-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-block li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.text-block i {
+  color: #4c1d95;
+  margin-right: 10px;
+}
+
+.image-block {
+  flex: 1;
+  text-align: center;
+}
+
+.image-block img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stats-section {
+  padding: 60px 10%;
+  background: #ede9fe;
+  text-align: center;
+  animation: fadeUp 1.2s ease-out;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #4c1d95;
+}
+
+.stat p {
+  font-size: 1rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #4c1d95;
+  color: white;
+  animation: slideUp 1s ease-out;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
